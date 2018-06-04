@@ -1,0 +1,15 @@
+.netm-form-group-error {
+  color: #d9534f;
+}
+
+.netm-form-group-error .form-control {
+  border-color: #d9534f;
+}
+
+.netm-form-group-error .netm-help-text {
+  margin-top: 10px;
+}
+
+.netm-help-text {
+  display: none
+}
