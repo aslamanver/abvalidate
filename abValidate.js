@@ -37,7 +37,7 @@
             var valName = vals[0];
             if(valName == 'required') requiredInput = true;
           }
-          if (debug) console.log(validations);
+          if (settings.debug) console.log(validations);
           for (var i = 0; i < validations.length; i++) {
             var vals = validations[i].trim().split(':');
             var valName = vals[0];
@@ -48,7 +48,7 @@
               case 'required':
                 if ($(this).val().length <= 0) {
                   valErrors = true;
-                  if (debug) console.log('Required');
+                  if (settings.debug) console.log('Required');
                   if(valMsg == null) valMsg = 'Required';
                   parentD.addClass('netm-form-group-error');
                   helpText.css('display', 'block');
@@ -61,7 +61,7 @@
                 var minL = parseInt(valMsgSp[0]);
                 var minLMsg = valMsgSp[1];
                 if ($(this).val().length < minL) {
-                  if (debug) console.log('Min');
+                  if (settings.debug) console.log('Min');
                   valErrors = true;
                   if(minLMsg == null) minLMsg = 'Min';
                   parentD.addClass('netm-form-group-error');
@@ -75,7 +75,7 @@
                 var minL = parseInt(valMsgSp[0]);
                 var minLMsg = valMsgSp[1];
                 if ($(this).val().length > minL) {
-                  if (debug) console.log('Max');
+                  if (settings.debug) console.log('Max');
                   valErrors = true;
                   if(minLMsg == null) minLMsg = 'Max';
                   parentD.addClass('netm-form-group-error');
@@ -89,7 +89,7 @@
                 var conf_id = $('#' + valMsgSp[0]);
                 var confMsg = valMsgSp[1];
                 if ($(this).val() !=  conf_id.val()) {
-                  if (debug) console.log('Confirm');
+                  if (settings.debug) console.log('Confirm');
                   valErrors = true;
                   if(confMsg == null) confMsg = 'Confirm';
                   parentD.addClass('netm-form-group-error');
@@ -100,7 +100,7 @@
               case 'email':
                 if(isNotReq) break;
                 if (!validateEmail($(this).val())) {
-                  if (debug) console.log('Email');
+                  if (settings.debug) console.log('Email');
                   valErrors = true;
                   if(valMsg == null) valMsg = 'Email';
                   parentD.addClass('netm-form-group-error');
@@ -110,7 +110,7 @@
                 break;
               default:
                 if(isNotReq) break;
-                if (debug) console.log('Default');
+                if (settings.debug) console.log('Default');
                 valErrors = true;
                 break;
             }
