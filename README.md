@@ -21,10 +21,8 @@
 
 ```javascript
 $(document).ready(function () {
-
     //.ab-form is your form class
     $(".ab-form").abValidate();
-
 });
 ```
 
@@ -38,7 +36,6 @@ $(document).ready(function () {
         <input type="text" name="name" ab-validation="required,min:5" class="ab-validation-i" />
         <div class="error"></div>
     </div><br>
-
 
     <div class="my-form-group">
         <input type="submit" name="submit" value="Submit">
