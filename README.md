@@ -74,3 +74,12 @@ Return the form status
 $(".ab-form").abValidate().success;
 ```
 
+#### 4. Avalilable validations
+
+```
+* required|message
+* min:5|message
+* max:5|message
+* email|message
+* confirm:elem_id - without #
+```
