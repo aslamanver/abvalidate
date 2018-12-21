@@ -1,7 +1,7 @@
 ## Custom Message - jQuery Form Validation - abValidate.js
 
-Contribution are welcome - Give a pull request <br>
-Don't give default error messages to your clients give in their language which they understand !
+ * Contribution are welcome - Give a pull request <br>
+ * Don't give default error messages to your clients give in their language which they understand !
 
 ### 1. Copy the CDN after your good scripts 
 
