@@ -36,7 +36,7 @@ $(document).ready(function () {
    
    <!-- Input and error message should be in a div class -->
    <div class="my-form-group">
-        <input type="text" name="name" ab-validation="required,min:5" class="ab-validation-i" />
+        <input type="text" ab-validation="required|Hey dude you missed that,min:5| No no you want to type more" name="name" class="ab-validation-i" />
         <div class="error"></div>
     </div><br>
 
