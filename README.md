@@ -53,7 +53,7 @@ $(document).ready(function () {
 * Examples
 
 ```html
-<input type="text" name="name" ab-validation="required|my custom message,min:5|my custom message" class="ab-validation-i" />
+<input type="text" name="name" ab-validation="required|Hey dude you missed that,min:5| No no you want to type more" class="ab-validation-i" />
 ```
 
 #### 3. Wanna write more ?
