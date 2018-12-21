@@ -2,6 +2,7 @@
 
  * Contribution are welcome - Give a pull request <br>
  * Don't give default error messages to your clients give in their language which they understand !
+ * https://aslamanver.github.io/abvalidate/ - Example
 
 #### 1. Copy the CDN after your good scripts 
 
