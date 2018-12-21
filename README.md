@@ -18,6 +18,8 @@
 
 #### 2. How it works
 
+<img src="https://i.imgur.com/5RcwLkd.png">
+
 1. Initialize the library
 
 ```javascript
