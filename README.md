@@ -56,7 +56,7 @@ $(document).ready(function () {
 <input type="text" name="name" ab-validation="required|my custom message,min:5|my custom message" class="ab-validation-i" />
 ```
 
-3. Wanna write more ?
+#### 3. Wanna write more ?
 
 ```javascript
 $(".ab-form").abValidate({
