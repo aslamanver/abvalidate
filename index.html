@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="abValidate.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="abValidate.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".ab-form").abValidate({
+                color: "#556b2f",
+                backgroundColor: "white",
+                debug: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <form class="ab-form" action="#">
+        <div class="form-group">
+            <input type="text" ab-validation="required,min:5" name="name" class="ab-validation-i" />
+            <div class="error"></div>
+        </div>
+        <div class="form-group">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
