@@ -12,7 +12,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- abValidate Library -->
-<script type="text/javascript" src="https://raw.githubusercontent.com/aslamanver/abvalidate/master/abValidate.min.js">
+<script type="text/javascript" src="https://raw.githubusercontent.com/aslamanver/abvalidate/master/abValidate.min.js"></script>
 <link rel="stylesheet" href="https://raw.githubusercontent.com/aslamanver/abvalidate/master/abValidate.css">
 ```
 
