@@ -118,6 +118,19 @@
                   helpText.append('* ' + confMsg + '<br>');
                 }
                 break;
+              case 'phone':
+                if(isNotReq) break;
+                if(!validatePhoneNumber($(this).val())) {
+                  if (!validateEmail($(this).val())) {
+                    if (settings.debug) console.log('Phone Number');
+                    valErrors = true;
+                    if (valMsg == null) valMsg = 'Phone Number';
+                    parentD.addClass('netm-form-group-error');
+                    helpText.css('display', 'block');
+                    helpText.append('* ' + valMsg + '<br>');
+                  }
+                  break;
+                }
               case 'email':
                 if (isNotReq) break;
                 if (!validateEmail($(this).val())) {
@@ -159,6 +172,10 @@
       return re.test(String(email).toLowerCase());
     }
 
+    function validatePhoneNumber(phone) {
+    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+    return re.test(phone);
+    }
     //return form_okay;
 
     return {
